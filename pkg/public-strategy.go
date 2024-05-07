@@ -2,13 +2,13 @@ package pkg
 
 import "fmt"
 
-type RouteStrategy struct {
+type PublicStrategy struct {
 	//
 }
 
-func (r *RouteStrategy) Route(startPoint, endPoint int) {
+func (r *PublicStrategy) Route(startPoint, endPoint int) {
 	avSpeed := 50
-	trafficJam := 10
+	trafficJam := 1
 	totalDistance := endPoint - startPoint
 	totalTime := totalDistance * trafficJam / avSpeed
 
